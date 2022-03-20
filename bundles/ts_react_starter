@@ -263,7 +263,7 @@ Disallow:
   </body>
 </html>
 
-%%% manifest.json
+%%% public/manifest.json
 {
    "short_name": "%%AppTitle%%",
    "name": "%%AppTitle%%",
