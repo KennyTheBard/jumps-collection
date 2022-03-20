@@ -1,0 +1,17 @@
+%%function_name%% = async (event: React.ChangeEvent<HTMLInputElement>) => {
+   if (event.target.files === null || event.target.files?.length === 0) {
+      return;
+   }
+   const f = event.target.files[0];
+
+   if (f) {
+      const r = new FileReader();
+      r.onload = (e) => {
+         if (e.target != null) {
+            const contents = e.target.result as string;
+            // do something with file contents
+         }
+      }
+      r.readAsText(f);
+   }
+}
